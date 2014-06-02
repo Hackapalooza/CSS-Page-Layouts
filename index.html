@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ladies Learning Code</title>
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="framework/css/reveal.css">
+		<link rel="stylesheet" href="framework/css/theme/llc.css" id="theme">
+		<link rel="stylesheet" href="framework/lib/css/monokai.css">
+		<link rel="stylesheet" href="framework/css/overrides.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<!-- begin editable section -->
+				<section class="center">
+					<h1>Page Layouts and Positioning with CSS</h1>
+					<p>The place where magic happens</p>
+				</section>
+
+				<!-- each <section> element creates a new slide. -->
+				<section class="cover">
+					<!-- <h1>CSS Page Layouts</h1> -->
+					<div class="instructors">
+						<h2>Your Instructor:</h2>
+						<ul>
+							<li>
+								<img src="content/images/kevin_avatar.jpg" alt="">
+								<div class="instructor-info">
+									<h3>Kevin Lee</h3>
+									<p>kevin@wesellsocks.com</p>
+									<p><a href="http://wesellsocks.com">wesellsocks.com</a></p>
+									<p><a href="https://twitter.com/livekeen">@livekeen</a></p>
+								</div>
+							</li>
+<!-- 							<li>
+								<img src="content/images/heather_avatar.jpg" alt="">
+								<div class="instructor-info">
+									<h3>Heather Payne</h3>
+									<p>heather@heatherpayne.ca</p>
+									<p><a href="http://heatherpayne.ca">heatherpayne.ca</a></p>
+									<p><a href="https://twitter.com/heatherpayne">@heatherpayne</a></p>
+								</div>
+							</li> -->
+						</ul>
+						<div class="credits">
+							<p>Thanks to <a href="#">Pearl Chen</a> and <a href="#">Mark Reale</a> for creating the foundation for today's content</p>
+						</div>
+					</div>
+
+				</section>
+
+        <section class="center">
+          <h1>Good Morning!</h1>
+          <p>I hope you're as excited as I am to learn how to build/improve your website! If you need any help don't hesitate to ask a question!</p>
+        </section>
+
+        <section>
+          <h2>A quick refresher on how CSS works</h2>
+          <pre><code>
+    &lt;style>
+      div {
+        background: green;
+      }
+      .box {
+        border: 4px solid blue;
+      }
+    &lt;/style>
+          </code></pre>
+          <pre><code>
+    &lt;body>
+      <div class="box">
+        This box has a background of green and a border because it is a "div" with a class of "box"
+      </div>
+      <br>
+      <div>
+        This box only has a background of green because it is a "div" but it doesn't have a class of "box"
+      </div>
+    &lt;/body>
+          </code></pre>
+        </section>
+
+				<section class="center">
+					<h1>What are CSS layouts?</h1>
+				</section>
+
+				<section>
+					<h2>Some examples</h2>
+					<img src="content/images/1a.png">
+					<img src="content/images/1b.png">
+					<img src="content/images/1c.png">
+					<img src="content/images/1d.png">
+				</section>
+
+				<section>
+          <h3>Here's an example to try in your code editor:</h3>
+          <pre><code>
+    &lt;body>
+      &lt;p>
+        If you maximize your browser screen you'll notice that reading this text from left to right is a bit of a pain. The more text there is, the more of a pain it becomes. Kind of annoying, right? It's also not going to win any awards in the looks department either. Let's fix that by learning about different way we can adjust the "properties" of our website.
+      &lt;/p>
+      &lt;p>
+        Shoreditch officia literally, Blue Bottle deserunt bitters photo booth tempor. Fugiat officia placeat crucifix cardigan. Aliquip lo-fi brunch, dolor laboris artisan 3 wolf moon dreamcatcher sed ethical. Meggings typewriter keffiyeh Intelligentsia before they sold out, post-ironic Truffaut id. Banksy deserunt cliche synth labore Tonx. Sapiente Intelligentsia wayfarers, ugh pour-over art party Shoreditch 90's commodo assumenda wolf ea. Freegan laboris Austin Banksy salvia.
+      &lt;/p>
+    &lt;/body>
+          </code></pre>
+				</section>
+
+				<section class="center">
+					<h1>Introducing the <code>display</code> property</h1>
+				</section>
+
+				<section>
+          <p>Every element has a default display value depending on what type of element (paragraph, header, bold) it is. The default for most elements is usually block or inline.</p>
+          <p>For example, this paragraph is a block element. The browser by default sets it to be <code>display: block</code>.</b></p>
+          <p>As you might imagine, the browser also sets some elements to be <code>display: inline</code>. <b>This bolded sentence for example, is an inline element.</b></p>
+					<pre><code>
+    <!-- the browser is pretty smart and sets these by default -->
+    &lt;style>
+      p {
+        display: block;
+      }
+      b, strong {
+        display: inline;
+      }
+    &lt;/style>
+					</code></pre>
+				</section>
+
+        <section>
+          <pre><code>
+    <!-- Heres some more examples of block elements -->
+    &lt;div>Divs&lt;/div>
+    &lt;header>Headers&lt;/header>
+    &lt;footer>Footers&lt;/footer>
+    &lt;p>Paragraphs&lt;/p>
+          </code></pre>
+          <pre><code>
+    <!-- Heres some more examples of inline elements -->
+    &lt;span>Spans&lt;/span>
+    &lt;strong>Bold (Strong)&lt;/strong>
+    &lt;em>Italics (Emphasis)&lt;/em>
+          </code></pre>
+        </section>
+
+        <section class="center">
+          <h1>Introducing <code>margin: auto</code></h1>
+        </section>
+
+        <section>
+          <h2>margin: auto</h2>
+          <p>Setting the width of a block-level element will prevent it from stretching out to the edges of its container to the left and right. Then, setting the left and right margins to <code>auto</code> will horizontally centre that element within its container. The element will take up the width you specify, then the remaining space will be split evenly between the two margins.</p>
+        </section>
+
+        <section>
+          <h3>Here's an example to try in your code editor:</h3>
+          <pre><code>
+    &lt;style>
+      div {
+        background: green; // this is just so you can see the box better
+      }
+      .box {
+        background: blue; // this is just so you can see the box better
+        margin: 0 auto;
+        max-width: 600px;
+      }
+    &lt;/style>
+          </code></pre>
+          <pre><code>
+    &lt;body>
+      <div class="box">
+        This is a box visually centered using margin: auto
+      </div>
+      <div>
+        This is a box that hasn't been visually centered
+      </div>
+    &lt;/body>
+          </code></pre>
+        </section>
+
+        <section class="center">
+          <h1>Introducing the <code>position: fixed</code></h1>
+        </section>
+
+        <section>
+          <p>
+            In order to make more complex layouts, sometimes we need to use the position property. We're going to cover one position today called <code>position: fixed</code>.
+          </p>
+          <p>
+            A fixed element always stays in the same place even if the page is scrolled.
+          </p>
+        </section>
+
+        <section>
+          <h3>Here's an example to try in your code editor:</h3>
+          <pre><code>
+    &lt;style>
+      .toolbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+    &lt;/style>
+          </code></pre>
+          <pre><code>
+    &lt;body>
+      <div class="toolbar">
+        This is an element that is in a fixed position.
+      </div>
+      <p>
+        Put a lot of text here and then scroll to see what position: fixed does to an element.
+      </p>
+    &lt;/body>
+          </code></pre>
+        </section>
+
+        <section class="center">
+          <h1>Introducing the <code>float</code> property</h1>
+        </section>
+
+        <section>
+          <p>Another CSS property used to make complex layouts is the float property.</p>
+          <p>Floating allows elements to "float" on top of other elements, whereas normally they cannot.</p>
+        </section>
+
+        <section>
+          <h3>Here's an example to try in your code editor:</h3>
+          <pre><code>
+    &lt;style>
+      .floated-image {
+        float: left;
+      }
+    &lt;/style>
+          </code></pre>
+          <pre><code>
+    &lt;body>
+      <p>
+      <img src="http://placehold.it/250x250" class="floated-image">
+        Cliche PBR try-hard, umami salvia letterpress sustainable meh raw denim Kickstarter. Kale chips gluten-free disrupt mlkshk, asymmetrical Tonx shabby chic readymade Vice trust fund. Chillwave selvage chambray, polaroid hashtag quinoa aesthetic mlkshk chia slow-carb Bushwick Echo Park lomo. Pickled cardigan vegan Kickstarter narwhal. Trust fund butcher skateboard roof party, crucifix cliche Truffaut. Hashtag mlkshk pork belly master cleanse banh mi. Mumblecore small batch blog, Godard cred fingerstache Schlitz chillwave Portland DIY Vice ugh.
+      </p>
+      <p>
+        Street art skateboard butcher gentrify, umami craft beer Etsy Shoreditch irony plaid put a bird on it ugh 8-bit typewriter. Seitan hoodie fixie, mlkshk Helvetica fap 90's asymmetrical selvage drinking vinegar. Flexitarian banh mi High Life retro before they sold out trust fund, next level semiotics Austin artisan twee pickled kitsch. Pour-over you probably haven't heard of them ethical, bitters tousled plaid narwhal kogi lomo umami disrupt pop-up tote bag sartorial. XOXO bicycle rights wayfarers, trust fund Williamsburg bitters street art mustache Odd Future stumptown crucifix forage. Direct trade mumblecore flexitarian, normcore authentic messenger bag tofu sustainable tousled cray vinyl. Tousled forage occupy disrupt gluten-free.
+      </p>
+      <p>
+        Neutra Williamsburg mixtape, try-hard pug bespoke Shoreditch disrupt dreamcatcher. Brooklyn actually selfies ethical, Thundercats organic next level viral occupy photo booth tattooed Wes Anderson literally. Tonx Marfa tattooed, quinoa vegan freegan Helvetica photo booth direct trade banjo. Bespoke messenger bag shabby chic you probably haven't heard of them, distillery tote bag bicycle rights keffiyeh fixie disrupt slow-carb XOXO selvage. Pour-over beard post-ironic, single-origin coffee flexitarian Tonx cliche Odd Future bicycle rights photo booth. Biodiesel 90's Tumblr authentic American Apparel synth, trust fund Bushwick mumblecore viral pickled. Kickstarter cred banjo, readymade irony iPhone chillwave selfies.
+      </p>
+      <p>
+        Sartorial four loko beard, put a bird on it photo booth retro vinyl butcher single-origin coffee squid lo-fi quinoa. Authentic raw denim hoodie food truck banjo street art. Jean shorts chia quinoa twee Blue Bottle brunch. Quinoa letterpress Kickstarter swag Neutra. Salvia Portland normcore chia, XOXO Shoreditch raw denim shabby chic Helvetica. American Apparel Odd Future 90's before they sold out, Thundercats tofu Shoreditch chia messenger bag Neutra. Mustache butcher Truffaut, ethical salvia irony Odd Future yr readymade mixtape skateboard normcore roof party.
+      </p>
+    &lt;/body>
+          </code></pre>
+        </section>
+
+        <section class="center">
+          <h1>Bonus: Introducing <code>media queries</code></h1>
+        </section>
+
+        <section>
+          <p>"Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what.</p>
+        </section>
+		</div>
+
+		<script src="framework/lib/js/head.min.js"></script>
+		<script src="framework/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'framework/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'framework/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'framework/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'framework/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'framework/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'framework/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
