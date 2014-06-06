@@ -75,6 +75,7 @@
 
           <p>Think of it as being similar to the frame of a house. It holds all the other parts of a website together.</p>
           <pre><code>
+    <!-- this is an example of a comment in html - tip: comments are useful for making notes! -->
     &lt;body id="css-layout"&gt;
       &lt;h1&gt;This is a header&lt;/h1&gt;
       &lt;p&gt;
@@ -95,25 +96,75 @@
           <p>CSS (Cascading Style Sheets) is what makes websites look nice. While HTML tells the browser what different parts of the page are, CSS says what those pieces should look like.</p>
           <p>Think of it as the furniture, decor and landscaping of a house. It makes a house look nice but a house is still a house without it.</p>
           <pre><code>
-    /* this is a tag (notice no hash or period) - this will affect every "p" tag */
+    /* the following is a tag (notice no hash or period) - this will affect every "p" tag */
     p {
       background: green;
     }
 
-    /* this is an id (notice the hash) - you can use each id once per page */
+    /* the following is an id (notice the hash) - you can use each id once per page */
     #css-layout {
       border: 4px solid blue;
     }
 
-    /* this is a class (notice the period) - you can use each class multiple times per page */
+    /* the following is a class (notice the period) - you can use each class multiple times per page */
     .box {
       border: 4px solid blue;
     }
           </code></pre>
         </section>
 
+        <section class="center">
+          <h1>Alright. Now that we're all refreshed, let's get started!</h1>
+        </section>
+
         <section>
-          <h2>Before we continue, we&rsquo;re going to setup a separate file for CSS called a stylesheet. You will be adding to this in each lesson.</h2>
+          <h2>Improve your project 1/3</h2>
+          <ul>
+            <li>
+              First, we're going to start by renaming your <code>final.html</code> to <code>index.html</code>
+            </li>
+            <li>
+              In the <code>&lt;head&gt;</code> of your newly renamed <code>index.html</code> file we're going to add this:
+            </li>
+          </ul>
+          <pre><code>
+    &lt;head>
+      <!-- this "link" tag tells the index.html page to use the styles.css file  -->
+      &lt;link rel="stylesheet" type="text/css" href="styles.css">
+    &lt;/head>
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Improve your project 2/3</h2>
+          <ul>
+            <li>
+              Next let's create a file called <code>styles.css</code> in the same folder as <code>index.html</code> file</h2>
+            </li>
+            <li>
+              In your <code>index.html</code> file copy and paste everything in <code>&lt;style&gt;</code> to <code>styles.css</code>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Improve your project 3/3</h2>
+          <p>
+            Open <code>index.html</code> in your browser (Chrome, Firefox...)
+          </p>
+          <p>
+             Everything should look the same as before. The difference is now we're a little more organized. Everything html should be in <code>index.html</code> and everything css should be in <code>styles.css</code>
+          </p>
+          <p>
+             We're pretty organized now but I think we can be even more organized than this. Let's go back to <code>styles.css</code> again.
+          </p>
+        </section>
+
+        <section>
+          <h2>Organize <code>styles.css</code> further</h2>
+          <p>
+            Let's use comments to organize and give our <code>styles.css</code>. Adding comments is invaluable because they let you make notes that only you will see. They're invisible to people viewing your website from a browser.
+          </p>
           <pre><code>
   /*
   ------------------------------------------
@@ -121,10 +172,17 @@
   :: Table of Contents
   ------------------------------------------
   
+  :: Base Starting Project
   :: Page Layouts and Positioning with CSS
   :: Another lesson name
   :: Yet another lesson name
   */
+
+  /* ------------------------------------------
+  :: Base Starting Project
+  ------------------------------------------ */
+
+  /* this is a comment indicating where we will put your base starting project css */
 
   /* ------------------------------------------
   :: Page Layouts and Positioning with CSS
@@ -137,11 +195,11 @@
         </section>
 
 				<section class="center">
-					<h1>What are CSS layouts?</h1>
+					<h1>Page layouts? What are those?</h1>
 				</section>
 
 				<section>
-					<h2>Some examples</h2>
+					<h2>Some examples of page layouts</h2>
 					<img src="content/images/1a.png">
 					<img src="content/images/1b.png">
 					<img src="content/images/1c.png">
@@ -149,17 +207,8 @@
 				</section>
 
 				<section>
-          <h3>Here's an example to try in your code editor:</h3>
-          <pre><code>
-  &lt;body>
-    &lt;p>
-      If you maximize your browser screen you'll notice that reading this text from left to right is a bit of a pain. The more text there is, the more of a pain it becomes. Kind of annoying, right? It's also not going to win any awards in the looks department either. Let's fix that by learning about different way we can adjust the "properties" of our website.
-    &lt;/p>
-    &lt;p>
-      Shoreditch officia literally, Blue Bottle deserunt bitters photo booth tempor. Fugiat officia placeat crucifix cardigan. Aliquip lo-fi brunch, dolor laboris artisan 3 wolf moon dreamcatcher sed ethical. Meggings typewriter keffiyeh Intelligentsia before they sold out, post-ironic Truffaut id. Banksy deserunt cliche synth labore Tonx. Sapiente Intelligentsia wayfarers, ugh pour-over art party Shoreditch 90's commodo assumenda wolf ea. Freegan laboris Austin Banksy salvia.
-    &lt;/p>
-  &lt;/body>
-          </code></pre>
+          <h3>You don't need to add CSS to make a website</h3>
+          <p>If you open <code>test.html</code> and maximize your browser screen you'll notice that reading the text from left to right is a bit of a pain. The more text there is, the more of a pain it becomes. Kind of annoying, right? It's also not going to win any awards in the looks department either. Let's fix that by learning about different ways we can adjust the "properties" of our website.</p>
 				</section>
 
 				<section class="center">
