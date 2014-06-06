@@ -11,7 +11,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="framework/css/reveal.css">
+    <link rel="stylesheet" href="framework/css/reveal.css">
 		<link rel="stylesheet" href="framework/css/theme/llc.css" id="theme">
 		<link rel="stylesheet" href="framework/lib/css/monokai.css">
 		<link rel="stylesheet" href="framework/css/overrides.css">
@@ -58,15 +58,6 @@
 									<p><a href="https://twitter.com/livekeen">@livekeen</a></p>
 								</div>
 							</li>
-<!-- 							<li>
-								<img src="content/images/heather_avatar.jpg" alt="">
-								<div class="instructor-info">
-									<h3>Heather Payne</h3>
-									<p>heather@heatherpayne.ca</p>
-									<p><a href="http://heatherpayne.ca">heatherpayne.ca</a></p>
-									<p><a href="https://twitter.com/heatherpayne">@heatherpayne</a></p>
-								</div>
-							</li> -->
 						</ul>
 						<div class="credits">
 							<p>Thanks to <a href="#">Pearl Chen</a> and <a href="#">Mark Reale</a> for creating the foundation for today's content</p>
@@ -83,53 +74,52 @@
         <section>
           <h2>A quick refresher on how CSS works</h2>
           <pre><code>
-    &lt;style>
-      div {
-        background: green;
-      }
-      // this is a class - you can use each class multiple times per page
-      .box {
-        border: 4px solid blue;
-      }
-      // this is a id - you can use each id once per page
-      #box {
-        border: 4px solid blue;
-      }
-    &lt;/style>
+    div {
+      background: green;
+    }
+    /* this is a class - you can use each class multiple times per page */
+    .box {
+      border: 4px solid blue;
+    }
+    /* this is a id - you can use each id once per page */
+    #box {
+      border: 4px solid blue;
+    }
           </code></pre>
           <pre><code>
-    &lt;body>
-      <div class="box">
-        This box has a background of green and a border because it is a "div" with a class of "box"
-      </div>
-      <br>
-      <div>
-        This box only has a background of green because it is a "div" but it doesn't have a class of "box"
-      </div>
-    &lt;/body>
+    &lt;body&gt;
+      &lt;div class="box"&gt;
+        This box has a background of green and a border because it is a DIV with a class of box
+      &lt;/div&gt;
+      &lt;br&gt;
+      &lt;div&gt;
+        This box only has a background of green because it is a DIV but it doesn't have a class of box
+      &lt;/div&gt;
+    &lt;/body&gt;
           </code></pre>
         </section>
 
         <section>
           <h2>Before we continue, we&rsquo;re going to setup a separate file for CSS called a stylesheet. You will be adding to this in each lesson.</h2>
           <pre><code>
-  // ------------------------------------------
-  // :: Hackapalooza 2014 Stylesheet
-  // :: Table of Contents
-  // ------------------------------------------
+  /*
+  ------------------------------------------
+  :: Hackapalooza 2014 Stylesheet
+  :: Table of Contents
+  ------------------------------------------
+  
+  :: Page Layouts and Positioning with CSS
+  :: Another lesson name
+  :: Yet another lesson name
+  */
 
-  // :: Page Layouts and Positioning with CSS
-  // :: Another lesson name
-  // :: Yet another lesson name
-
-  // ------------------------------------------
-  // :: Page Layouts and Positioning with CSS
-  // ------------------------------------------
+  /* ------------------------------------------
+  :: Page Layouts and Positioning with CSS
+  ------------------------------------------ */
 
   body {
     background: white;
   }
-
           </code></pre>
         </section>
 
@@ -168,15 +158,14 @@
           <p>For example, this paragraph is a block element. The browser by default sets it to be <code>display: block</code>.</b></p>
           <p>As you might imagine, the browser also sets some elements to be <code>display: inline</code>. <b>This bolded sentence for example, is an inline element.</b></p>
 					<pre><code>
-  <!-- the browser is pretty smart and sets these by default -->
-  &lt;style>
-    p {
-      display: block;
-    }
-    b, strong {
-      display: inline;
-    }
-  &lt;/style>
+  /* the browser is pretty smart and sets these by default */
+  
+  p {
+    display: block;
+  }
+  b, strong {
+    display: inline;
+  }
 					</code></pre>
 				</section>
 
@@ -208,7 +197,7 @@
         <section>
           <h3>Here's an example to try in your code editor:</h3>
           <pre><code>
-  &lt;style>
+  
     div {
       background: green; // this is just so you can see the box better
     }
@@ -217,7 +206,7 @@
       margin: 0 auto;
       max-width: 600px;
     }
-  &lt;/style>
+
           </code></pre>
           <pre><code>
   &lt;body>
@@ -247,14 +236,14 @@
         <section>
           <h3>Here's an example to try in your code editor:</h3>
           <pre><code>
-  &lt;style>
+  
     .toolbar {
       position: fixed;
       left: 0;
       top: 0;
       width: 100%;
     }
-  &lt;/style>
+
           </code></pre>
           <pre><code>
   &lt;body>
@@ -280,11 +269,11 @@
         <section>
           <h3>Here's an example to try in your code editor:</h3>
           <pre><code>
-  &lt;style>
+  
     .floated-image {
       float: left;
     }
-  &lt;/style>
+
         </code></pre>
         <pre><code>
   &lt;body>
@@ -315,7 +304,7 @@
 		</div>
 
 		<script src="framework/lib/js/head.min.js"></script>
-		<script src="framework/js/reveal.min.js"></script>
+    <script src="framework/js/reveal.min.js"></script>
 
 		<script>
 
