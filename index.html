@@ -38,13 +38,11 @@
 
 			<div class="slides">
 
-				<!-- begin editable section -->
 				<section class="center">
 					<h1>Page Layouts and Positioning with CSS</h1>
 					<p>The place where magic happens</p>
 				</section>
 
-				<!-- each <section> element creates a new slide. -->
 				<section class="cover">
 					<div class="instructors">
 						<h2>Your Instructor:</h2>
@@ -72,30 +70,45 @@
         </section>
 
         <section>
-          <h2>A quick refresher on how CSS works</h2>
+          <h2>A quick refresher on what HTML is</h2>
+          <p>We use HTML to help our browsers understand how we want things displayed.</p>
+
+          <p>Think of it as being similar to the frame of a house. It holds all the other parts of a website together.</p>
           <pre><code>
-    div {
+    &lt;body id="css-layout"&gt;
+      &lt;h1&gt;This is a header&lt;/h1&gt;
+      &lt;p&gt;
+        This is a paragraph with a &lt;strong&gt;strong (bold) tag within it&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;p class="box"&gt;
+        This is a paragraph with a class of box on it&lt;/strong&gt;
+      &lt;/p&gt;
+      &lt;p class="box"&gt;
+        This is a paragraph with a class of box on it&lt;/strong&gt;
+      &lt;/p&gt;
+    &lt;/body&gt;
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>A quick refresher on what CSS is</h2>
+          <p>CSS (Cascading Style Sheets) is what makes websites look nice. While HTML tells the browser what different parts of the page are, CSS says what those pieces should look like.</p>
+          <p>Think of it as the furniture, decor and landscaping of a house. It makes a house look nice but a house is still a house without it.</p>
+          <pre><code>
+    /* this is a tag (notice no hash or period) - this will affect every "p" tag */
+    p {
       background: green;
     }
-    /* this is a class - you can use each class multiple times per page */
+
+    /* this is an id (notice the hash) - you can use each id once per page */
+    #css-layout {
+      border: 4px solid blue;
+    }
+
+    /* this is a class (notice the period) - you can use each class multiple times per page */
     .box {
       border: 4px solid blue;
     }
-    /* this is a id - you can use each id once per page */
-    #box {
-      border: 4px solid blue;
-    }
-          </code></pre>
-          <pre><code>
-    &lt;body&gt;
-      &lt;div class="box"&gt;
-        This box has a background of green and a border because it is a DIV with a class of box
-      &lt;/div&gt;
-      &lt;br&gt;
-      &lt;div&gt;
-        This box only has a background of green because it is a DIV but it doesn't have a class of box
-      &lt;/div&gt;
-    &lt;/body&gt;
           </code></pre>
         </section>
 
