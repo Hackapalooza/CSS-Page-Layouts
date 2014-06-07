@@ -256,6 +256,45 @@
         </section>
 
         <section class="center">
+          <h1>Introducing the box model</h1>
+        </section>
+
+        <section>
+          <p>
+            To understand the box model, we need to understand how the browser "sees" HTML elements. To the browser, every HTML element is a rectangular box.
+          </p>
+          <p>If we show the outlines of all the elements in an HTML document, it looks a bit like this:</p>
+          <img src="content/images/redboxes.png" alt="">
+        </section>
+
+        <section>
+          <p>CSS uses 5 properties to determine the size and spacing of these boxes:</p>
+          <strong><code>Margin</code>, <code>border</code>, <code>padding</code>, <code>width</code>, and <code>height</code></strong>
+          <img src="content/images/border-box-model.gif" alt="">
+        </section>
+
+        <section>
+          <h3>Here's an example to try in your code editor:</h3>
+          <pre><code>
+    .box-model {
+      background: #BADA55;
+      margin: 10px;
+      border: 10px;
+      padding: 10px;
+      max-width: 600px;
+    }
+          </code></pre>
+          <pre><code>
+    &lt;body id="css-layout">
+      &lt;span class="box-model">
+        &lt;img src="images/kitten.jpg">
+      &lt;/span>
+    &lt;/body&gt;
+          </code></pre>
+        </section>
+
+
+        <section class="center">
           <h1>Introducing <code>margin: auto</code></h1>
         </section>
 
@@ -267,64 +306,12 @@
         <section>
           <h3>Here's an example to try in your code editor:</h3>
           <pre><code>
-  
-    p {
-      background: green; /* this is just so you can see the box better */
-    }
-    .box {
-      background: blue; /* this is just so you can see the box better */
-      margin: 0 auto;
-      max-width: 600px;
-    }
-
-          </code></pre>
-          <pre><code>
-    &lt;body id="css-layout">
-      &lt;p>
-        This is a paragraph that hasn't been visually centered
-      &lt;/p&gt;
-      &lt;p class="box"&gt;
-        This is a paragraph that has been visually centered using margin: auto
-      &lt;/p&gt;
-      &lt;p class="box"&gt;
-        This is a paragraph that has been visually centered using margin: auto
-      &lt;/p&gt;
-    &lt;/body&gt;
-          </code></pre>
-        </section>
-
-        <section class="center">
-          <h1>Introducing the box model</h1>
-        </section>
-
-        <section>
-          <p>
-            Now that you've been introduced to margins and width let's introduce you to the rest of what is called the "box model".
-          </p>
-          <p>
-            To understand the box model, we need to understand how the browser "sees" HTML elements. To the browser, every HTML element is a rectangular box.
-          </p>
-        </section>
-
-        <section>
-          <p>If we show the outlines of all the elements in an HTML document, it looks a bit like this:</p>
-          <img src="content/images/redboxes.png" alt="">
-        </section>
-
-        <section>
-          <p>CSS uses 5 properties to determine the size and spacing of these boxes:</p>
-          <strong><code>Margin</code>, <code>border</code>, <code>padding</code>, <code>width</code>, and <code>height</code></strong>
-          <img src="content/images/redboxes.png" alt="">
-        </section>
-
-        <section>
-          <h3>Here's an example to try in your code editor:</h3>
-          <pre><code>
     .box-model {
       background: #BADA55;
-      margin: 10px;
+      margin: 0 auto;
       border: 10px;
       padding: 10px;
+      max-width: 600px;
     }
           </code></pre>
           <pre><code>
