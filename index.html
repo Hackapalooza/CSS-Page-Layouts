@@ -523,8 +523,46 @@
         </section>
 
         <section>
+          <h3>Getting Responsive 1/3</h3>
           <p>"Responsive Design" is the strategy of making a site that "responds" to the browser and device that it is being shown on... by looking awesome no matter what.</p>
+          <p>Media queries are the most powerful tool for doing this. Let's take our layout and have it display in one column when the browser is too small to fit the menu in the sidebar.</p>
         </section>
+
+        <section>
+          <h3>Getting Responsive 2/3</h3>
+          <p>Let's try adding a media query:</p>
+          <pre><code>
+  /* this is a media query - if my browser is wider than 481px this gets ignored */
+  @media (max-width: 481px) {
+
+    /* css goes in here */
+
+  }
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Getting Responsive 3/3</h3>
+          <p>Let's try adding some CSS selectors into the media query to see how it works:</p>
+          <pre><code>
+  /* this is a media query - if my browser is wider than 481px this gets ignored */
+  @media (max-width: 481px) {
+
+    li {
+      border-bottom: 1px solid whitesmoke;
+      display: block;
+      list-style: none;
+      padding: 20px;
+    }
+
+    .copyright {
+      float: none;
+    }
+
+  }
+          </code></pre>
+        </section>
+
 		</div>
 
 		<script src="framework/lib/js/head.min.js"></script>
