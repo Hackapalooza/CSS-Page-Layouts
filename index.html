@@ -241,7 +241,8 @@
           <pre><code>
   <!-- Heres some more examples of block elements -->
   &lt;div>Divs&lt;/div>
-  &lt;section>Sections&lt;/section>
+  &lt;section>section&lt;/section>
+  &lt;footer>footer&lt;/footer>
   &lt;h1>Heading 1&lt;/h1>
   &lt;h2>Heading 2&lt;/h2>
   &lt;h3>Heading 3&lt;/h3>
@@ -253,6 +254,23 @@
   &lt;strong>Bold (Strong)&lt;/strong>
   &lt;em>Italics (Emphasis)&lt;/em>
           </code></pre>
+        </section>
+
+        <section>
+          <h3>Practice time: Let's try making a list item (which is usually a block element) an inline element</h3>
+          <pre><code>
+  
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
+        </code></pre>
         </section>
 
         <section class="center">
@@ -293,6 +311,18 @@
           </code></pre>
         </section>
 
+        <section>
+          <h3>Margin vs. Padding</h3>
+          <p>Adding padding to an element makes the element bigger, whereas adding a margin adds space around the element.</p>
+
+          <p>If you make a 100px wide element, and then add 40px of padding to it, it will become 180px wide.</p>
+
+          <p>If you add a 40px margin to a 100px wide element, it stays 100px wide.</p>
+
+          <p>If you add a 1px border to a 100px wide element, it will become 102px wide.</p>
+
+          <p>If your element doesn't have a border or a background, you may not be able to see the difference between margin and padding.</p>
+        </section>
 
         <section class="center">
           <h1>Introducing <code>margin: auto</code></h1>
@@ -365,8 +395,10 @@
         </section>
 
         <section>
-          <p>Another CSS property used to make complex layouts is the float property.</p>
-          <p>Floating allows elements to "float" on top of other elements, whereas normally they cannot.</p>
+          <p>Another CSS property used for layouts is the float property.</p>
+          <p>Floating an element (such as an image) will cause it to "float" to the side and cause other elements (nearby images and text) to wrap around the floated element.</p>
+          <p>Here's an example of an image floated to the right:</p>
+          <img src="content/images/float.png" alt="">
         </section>
 
         <section>
@@ -386,12 +418,6 @@
     &lt;/p>
     &lt;p>
       Street art skateboard butcher gentrify, umami craft beer Etsy Shoreditch irony plaid put a bird on it ugh 8-bit typewriter. Seitan hoodie fixie, mlkshk Helvetica fap 90's asymmetrical selvage drinking vinegar. Flexitarian banh mi High Life retro before they sold out trust fund, next level semiotics Austin artisan twee pickled kitsch. Pour-over you probably haven't heard of them ethical, bitters tousled plaid narwhal kogi lomo umami disrupt pop-up tote bag sartorial. XOXO bicycle rights wayfarers, trust fund Williamsburg bitters street art mustache Odd Future stumptown crucifix forage. Direct trade mumblecore flexitarian, normcore authentic messenger bag tofu sustainable tousled cray vinyl. Tousled forage occupy disrupt gluten-free.
-    &lt;/p>
-    &lt;p>
-      Neutra Williamsburg mixtape, try-hard pug bespoke Shoreditch disrupt dreamcatcher. Brooklyn actually selfies ethical, Thundercats organic next level viral occupy photo booth tattooed Wes Anderson literally. Tonx Marfa tattooed, quinoa vegan freegan Helvetica photo booth direct trade banjo. Bespoke messenger bag shabby chic you probably haven't heard of them, distillery tote bag bicycle rights keffiyeh fixie disrupt slow-carb XOXO selvage. Pour-over beard post-ironic, single-origin coffee flexitarian Tonx cliche Odd Future bicycle rights photo booth. Biodiesel 90's Tumblr authentic American Apparel synth, trust fund Bushwick mumblecore viral pickled. Kickstarter cred banjo, readymade irony iPhone chillwave selfies.
-    &lt;/p>
-    &lt;p>
-      Sartorial four loko beard, put a bird on it photo booth retro vinyl butcher single-origin coffee squid lo-fi quinoa. Authentic raw denim hoodie food truck banjo street art. Jean shorts chia quinoa twee Blue Bottle brunch. Quinoa letterpress Kickstarter swag Neutra. Salvia Portland normcore chia, XOXO Shoreditch raw denim shabby chic Helvetica. American Apparel Odd Future 90's before they sold out, Thundercats tofu Shoreditch chia messenger bag Neutra. Mustache butcher Truffaut, ethical salvia irony Odd Future yr readymade mixtape skateboard normcore roof party.
     &lt;/p>
   &lt;/body>
           </code></pre>
