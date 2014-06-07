@@ -383,7 +383,7 @@
         </section>
 
         <section>
-          <h3>Practice time: Let's try giving the unordered list a padding of 0, a max-width of 600px and a margin of auto</h3>
+          <h3>Practice time: Let's try giving the unordered list a max-width of 600px and a margin of auto</h3>
           <pre><code>
   &lt;footer> <!-- this is a footer -->
     &lt;ul> <!-- this is an unordered list -->
@@ -426,43 +426,6 @@
   }
           </code></pre>
         </section>
-
-<!--         <section class="center">
-          <h1>Introducing the <code>position: fixed</code></h1>
-        </section>
-
-        <section>
-          <p>
-            In order to make more complex layouts, sometimes we need to use the position property. We're going to cover one position today called <code>position: fixed</code>.
-          </p>
-          <p>
-            A fixed element always stays in the same place even if the page is scrolled.
-          </p>
-        </section>
-
-        <section>
-          <h3>Here's an example to try in your code editor:</h3>
-          <pre><code>
-  
-    .toolbar {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-    }
-
-          </code></pre>
-          <pre><code>
-  &lt;body>
-    <div class="toolbar">
-      This is an element that is in a fixed position.
-    </div>
-    <p>
-      Put a lot of text here and then scroll to see what position: fixed does to an element.
-    </p>
-  &lt;/body>
-          </code></pre>
-        </section> -->
 
         <section class="center">
           <h1>Introducing the <code>float</code> property</h1>
@@ -515,6 +478,41 @@
   .copyright {
     float: right;
   }
+          </code></pre>
+        </section>
+
+        <section class="center">
+          <h1>Introducing <code>position: fixed</code></h1>
+        </section>
+
+        <section>
+          <p>
+            In order to make more complex layouts, sometimes we need to use the position property. There are a variety of positions (absolute, fixed, static) but we're going to cover one position in this lesson called <code>position: fixed</code>.
+          </p>
+          <p>
+            A fixed element always stays in the same place even if the page is scrolled.
+          </p>
+        </section>
+
+        <section>
+          <p>We can get our menu to stay at the top of the screen while the user scrolls with the position: fixed; declaration.</p>
+          <p>position: fixed; requires us to set the bottom and right properties to tell the browser where to fix the menu to.</p>
+          <pre><code>
+  &lt;body>
+    &lt;a class="back-to-top" href="#">Back to top&lt;/a>
+  &lt;/body>
+          </code></pre>
+          <pre><code>
+    .back-to-top {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+
+      background: white;
+      color: #333;
+      padding: 20px;
+      text-decoration: none;
+    }
           </code></pre>
         </section>
 
