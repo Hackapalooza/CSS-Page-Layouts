@@ -259,7 +259,6 @@
         <section>
           <h3>Practice time: Let's try making a list item (which is usually a block element) an inline element</h3>
           <pre><code>
-  
   &lt;footer> <!-- this is a footer -->
     &lt;ul> <!-- this is an unordered list -->
       &lt;li> <!-- this is a list item -->
@@ -268,9 +267,36 @@
       &lt;li>
         &lt;a href="blank.html">The void&lt;/a>
       &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
     &lt;/ul>
   &lt;/footer>
-        </code></pre>
+          </code></pre>
+        </section>
+
+        <section>
+          <h3>Practice time: Let's try making the list items (which is usually a block element) an inline element</h3>
+          <pre><code>
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
+          </code></pre>
+          <pre><code>
+  li {
+    display: inline;
+  }
+          </code></pre>
         </section>
 
         <section class="center">
@@ -292,22 +318,45 @@
         </section>
 
         <section>
-          <h3>Here's an example to try in your code editor:</h3>
+          <h3>Practice time: Let's try giving the unordered list a padding of 20px</h3>
           <pre><code>
-    .box-model {
-      background: #BADA55;
-      margin: 10px;
-      border: 10px;
-      padding: 10px;
-      max-width: 600px;
-    }
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
+        </code></pre>
+        </section>
+
+        <section>
+          <h3>Practice time: Let's try giving the unordered list a padding of 20px</h3>
+          <pre><code>
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
           </code></pre>
           <pre><code>
-    &lt;body id="css-layout">
-      &lt;span class="box-model">
-        &lt;img src="images/kitten.jpg">
-      &lt;/span>
-    &lt;/body&gt;
+  ul {
+    padding: 20px;
+  }
           </code></pre>
         </section>
 
@@ -334,26 +383,51 @@
         </section>
 
         <section>
-          <h3>Here's an example to try in your code editor:</h3>
+          <h3>Practice time: Let's try giving the unordered list a padding of 0, a max-width of 600px and a margin of auto</h3>
           <pre><code>
-    .box-model {
-      background: #BADA55;
-      margin: 0 auto;
-      border: 10px;
-      padding: 10px;
-      max-width: 600px;
-    }
-          </code></pre>
-          <pre><code>
-    &lt;body id="css-layout">
-      &lt;span class="box-model">
-        &lt;img src="images/kitten.jpg">
-      &lt;/span>
-    &lt;/body&gt;
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
           </code></pre>
         </section>
 
-        <section class="center">
+        <section>
+          <h3>Practice time: Let's try giving the unordered list a max-width of 600px and a margin of auto</h3>
+          <pre><code>
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
+          </code></pre>
+          <pre><code>
+  ul {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+          </code></pre>
+        </section>
+
+<!--         <section class="center">
           <h1>Introducing the <code>position: fixed</code></h1>
         </section>
 
@@ -388,7 +462,7 @@
     </p>
   &lt;/body>
           </code></pre>
-        </section>
+        </section> -->
 
         <section class="center">
           <h1>Introducing the <code>float</code> property</h1>
@@ -402,24 +476,45 @@
         </section>
 
         <section>
-          <h3>Here's an example to try in your code editor:</h3>
+          <h3>Practice time: Let's try giving the list item with a class of copyright a float to the right</h3>
           <pre><code>
-  
-    .floated-image {
-      float: left;
-    }
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
+          </code></pre>
+        </section>
 
-        </code></pre>
-        <pre><code>
-  &lt;body>
-    &lt;p>
-    &lt;img src="http://placehold.it/250x250" class="floated-image">
-      Cliche PBR try-hard, umami salvia letterpress sustainable meh raw denim Kickstarter. Kale chips gluten-free disrupt mlkshk, asymmetrical Tonx shabby chic readymade Vice trust fund. Chillwave selvage chambray, polaroid hashtag quinoa aesthetic mlkshk chia slow-carb Bushwick Echo Park lomo. Pickled cardigan vegan Kickstarter narwhal. Trust fund butcher skateboard roof party, crucifix cliche Truffaut. Hashtag mlkshk pork belly master cleanse banh mi. Mumblecore small batch blog, Godard cred fingerstache Schlitz chillwave Portland DIY Vice ugh.
-    &lt;/p>
-    &lt;p>
-      Street art skateboard butcher gentrify, umami craft beer Etsy Shoreditch irony plaid put a bird on it ugh 8-bit typewriter. Seitan hoodie fixie, mlkshk Helvetica fap 90's asymmetrical selvage drinking vinegar. Flexitarian banh mi High Life retro before they sold out trust fund, next level semiotics Austin artisan twee pickled kitsch. Pour-over you probably haven't heard of them ethical, bitters tousled plaid narwhal kogi lomo umami disrupt pop-up tote bag sartorial. XOXO bicycle rights wayfarers, trust fund Williamsburg bitters street art mustache Odd Future stumptown crucifix forage. Direct trade mumblecore flexitarian, normcore authentic messenger bag tofu sustainable tousled cray vinyl. Tousled forage occupy disrupt gluten-free.
-    &lt;/p>
-  &lt;/body>
+        <section>
+          <h3>Practice time: Let's try giving the list item with a class of copyright a float to the right</h3>
+          <pre><code>
+  &lt;footer> <!-- this is a footer -->
+    &lt;ul> <!-- this is an unordered list -->
+      &lt;li> <!-- this is a list item -->
+        &lt;a href="index.html">Home&lt;/a> <!-- this is a link -->
+      &lt;/li>
+      &lt;li>
+        &lt;a href="blank.html">The void&lt;/a>
+      &lt;/li>
+      &lt;li class="copyright">
+        Copyright 2014 Kevin Lee
+      &lt;/li>
+    &lt;/ul>
+  &lt;/footer>
+          </code></pre>
+          <pre><code>
+  .copyright {
+    float: right;
+  }
           </code></pre>
         </section>
 
